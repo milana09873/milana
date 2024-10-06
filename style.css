@@ -1,13 +1,117 @@
-.ram {
-    border: 5px solid rgba(112, 58, 45, 0.667) ;
-    padding: 20px 15px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+header {
+  background-color: #573131;
+  padding: 20px;
+  position: fixed; /* Фиксированное положение */
+  width: 95%; 
+  border-radius: 50px;
+  z-index: 1000; /* Убедитесь, что хедер над контентом */
+}
+
+nav ul {
+  list-style: none; /* Убираем маркеры списка */
+  display: flex; /* Используем flexbox */
+  justify-content: space-between; /* Размещаем элементы по бокам */
+  align-items: center; /* Выравниваем элементы по вертикали */
+  margin: 0;
+  padding: 0 20px; /* Отступы по бокам */
+}
+
+nav ul li a {
+  color: white; 
+  text-decoration: none; /* Убираем подчеркивание */
+  font-size: 18px; /* Размер текста */
+}
+
+nav ul li a:hover {
+  color: #d7bebe; /* Цвет текста при наведении */
+}
+
+main {
+  padding: 80px 0 0; /* Отступы для основного контента, чтобы избежать наложения на фиксированный хедер */
+}
+
+.collage {
+  display: grid; /* Используем grid для размещения изображений */
 }
 
 
-img {
-     width:50%;
-     margin-right:20px ;
+.image-container {
+  position: relative; /* Устанавливаем относительное позиционирование для контейнера */
 }
-p {
-    margin-top: 0;
-  }
+
+.collage img.large {
+  width: 350px; /* Ширина увеличенного изображения 1 */
+}
+
+.collage img.smaller {
+  width: 150px; /* Ширина уменьшенного изображения 2 */
+  position:absolute; /* Абсолютное позиционирование для второго изображения */
+  top: 0; /* Располагаем вверху */
+  right:300; /* Располагаем справа */
+}
+.collage img.smaller2 {
+  width: 150px; /* Ширина уменьшенного изображения 2 */
+  position:absolute; /* Абсолютное позиционирование для второго изображения */
+  top: 120px; /* Располагаем вверху */
+  right:700px; /* Располагаем справа */
+}
+.collage img.large2 {
+ width: 210px;
+ position: absolute;
+ right: 500px;
+}
+.collage img.smaller3 {
+  width: 180px; /* Ширина уменьшенного изображения 2 */
+  position:absolute; /* Абсолютное позиционирование для второго изображения */
+  top: 110px; /* Располагаем вверху */
+  right:310px; /* Располагаем справа */
+}
+.collage img.smaller4 {
+  width: 150px; /* Ширина уменьшенного изображения 2 */
+  position:absolute; /* Абсолютное позиционирование для второго изображения */
+  right:320px; /* Располагаем справа */
+}
+.collage img.large3 {
+  width: 300px;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+ }
+
+ div.left {
+  float: left;
+}
+div.right {
+  float: right;
+}
+h1{
+  font-size: 36px; 
+  color: #804338; 
+  margin: 5px 0; 
+  font-family: '';
+}
+.te{
+  display: flex;
+}
+.a1{
+    text-align: center;
+    margin: 60px;
+    color: #573131;
+}
+.a2{
+  text-align: center;
+  margin: 0px;
+  color: #573131;
+}
+
+.cont {
+  padding-top: 100px;
+  padding-left: 470px; /* Центрирует содержимое внутри контейнера */
+}
+
