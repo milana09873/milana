@@ -1,0 +1,120 @@
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: text-decoration 0.2s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.large {
+    width: 100px;
+}
+
+nav {
+    background-color: #fff;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0px 20px;
+}
+
+.bu1 {
+    background-color: white;
+    color: #663399;
+    border: none;
+    height: 45px;
+    outline: 2px solid #663399;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bu1:hover {
+    background-color: #f1f1f1;
+}
+
+.bu2 {
+    background-color: #663399;
+    color: #fff;
+    border: none;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bu2:hover {
+    background-color: #5e2f8c;
+}
+
+.people{
+    text-align: center;
+    padding: 0px;
+}
+
+.people h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+.purple-text {
+    color: #663399;
+}
+
+
+.cta-button {
+    background-color: #663399;
+    color: #fff;
+    border: none;
+    height: 60px;
+    width: 170px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #5e2f8c;
+}
+
+.people p {
+    font-size: 18px;;
+}
+
+.people p strong {
+    color: black;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    padding: 30px;
+}
+
+.logos img {
+    height: 40px;
+}
+
+.movie{
+    display: flex;
+    padding: 30px 200px;
+    height: 500px;
+}
+
