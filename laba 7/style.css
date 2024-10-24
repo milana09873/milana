@@ -1,4 +1,24 @@
 
+nav {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 95%;
+    background-color: #fff;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+
+    opacity: 1; 
+}
+
+
+body {
+    padding-top: 70px; 
+}
+
 nav ul li a {
     text-decoration: none;
     color: #333;
@@ -59,10 +79,27 @@ nav ul li {
     background-color: #5e2f8c;
 }
 
-.people{
+
+.people {
     text-align: center;
     padding: 0px;
+    animation-duration: 1.5s; 
 }
+
+.cta-button:hover {
+    animation: pulse 1s infinite;
+}
+
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
 
 .people h1 {
     font-size: 48px;
@@ -75,22 +112,8 @@ nav ul li {
 }
 
 
-.cta-button {
-    background-color: #663399;
-    color: #fff;
-    border: none;
-    height: 60px;
-    width: 170px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
-.cta-button:hover {
-    background-color: #5e2f8c;
-}
+
 
 .people p {
     font-size: 18px;;
@@ -118,76 +141,106 @@ nav ul li {
     height: 500px;
 }
 
-/* Базовый стиль для настольных компьютеров и больших экранов */
 
-/* Стиль для планшетов (ширина экрана от 768px до 1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
     .people h1 {
-        font-size: 36px; /* Уменьшаем шрифт заголовка */
+        font-size: 36px; 
     }
 
     .logos img {
-        height: 30px; /* Уменьшаем логотипы */
+        height: 30px; 
     }
 
     .movie {
-        height: 400px; /* Уменьшаем высоту видео */
-        padding: 20px 100px; /* Сокращаем внутренние отступы */
+        height: 400px; 
+        padding: 20px 100px; 
     }
 
     .cta-button, .bu1, .bu2 {
-        width: 150px; /* Сужаем кнопки */
-        height: 50px; /* Уменьшаем высоту кнопок */
+        width: 150px; 
+        height: 50px; 
     }
+    
 
     nav ul li {
-        margin: 0px 10px; /* Уменьшаем отступы между пунктами меню */
+        margin: 0px 10px;
     }
 }
 
-/* Стиль для телефонов (ширина экрана меньше 768px) */
+
 @media (max-width: 767px) {
     nav {
         flex-direction: row;
-        flex-wrap: wrap; /* Позволяет элементам оставаться в строке, но переноситься при необходимости */
+        flex-wrap: wrap; 
         padding: 10px;
     }
 
     nav ul {
-        flex-direction: row; /* Оставляем элементы в строке */
-        justify-content: space-around; /* Равномерно распределяем по ширине */
+        flex-direction: row; 
+        justify-content: space-around; 
         margin: 0;
     }
 
     .large {
-        width: 60px; /* Уменьшаем логотип для телефонов */
+        width: 60px; 
     }
 
     nav ul li {
-        margin: 5px; /* Уменьшаем отступы между пунктами меню */
+        margin: 5px; 
     }
 
     .people h1 {
-        font-size: 28px; /* Уменьшаем шрифт заголовка для телефонов */
+        font-size: 28px; 
     }
 
     .cta-button, .bu1, .bu2 {
-        width: 140px; /* Сужаем кнопки */
-        height: 45px; /* Уменьшаем высоту кнопок */
+        width: 140px; 
+        height: 45px;
     }
 
     .logos {
-        flex-wrap: wrap; /* Логотипы остаются в строках, но могут переноситься */
+        flex-wrap: wrap; 
         gap: 20px;
     }
 
     .logos img {
-        height: 25px; /* Уменьшаем размер логотипов для телефонов */
+        height: 25px;
     }
 
     .movie {
-        height: 300px; /* Еще сильнее уменьшаем высоту видео */
-        padding: 10px 50px; /* Сокращаем внутренние отступы */
+        height: 300px; 
+        padding: 10px 50px; 
     }
 }
+@keyframes fill {
+    50% {
+      transform: translateX(-5%);
+    }
+  }
+
+.cta-button {
+    background-color: #663399;
+    color: #fff;
+    border: none;
+    height: 60px;
+    width: 170px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 1;
+    transform: scale(1);
+    animation: none;
+}
+
+.cta-button:hover {
+    background-color: #5e2f8c;
+}
+
+
+.hidden {
+    animation: none;
+}
+
 
